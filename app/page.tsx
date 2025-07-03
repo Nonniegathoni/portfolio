@@ -85,14 +85,13 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  I'm a passionate software developer currently pursuing my Bachelor's degree in Software Development at
-                  KCA University, with an expected graduation date of November 28th, 2025.
+                 I am a dedicated software engineer who is presently enrolled in KCA University's Bachelor of Software Development program. 
+                     I anticipate graduating on November 28, 2025.
                 </p>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  My journey in software development has been driven by curiosity and a desire to solve real-world
-                  problems through technology. I actively participate in hackathons like Android254 to continuously
-                  enhance my skills and stay updated with the latest technologies.
-                </p>
+                  Curiosity and a desire to use technology to address real-world issues have motivated my career in software development. 
+                  I actively take part in hackathons such as Android254 in order to consistently improve my abilities and remain current with emerging technologies.
+                  </p>
                 <div className="flex items-center gap-4 text-gray-600">
                   <div className="flex items-center gap-2">
                     <Phone className="w-4 h-4" />
@@ -255,7 +254,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 bg-white/10 backdrop-blur-sm border-t border-white/20">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-600">© 2025 Lucy Gathoni Mugo. Built with passion and code.</p>
+          <p className="text-gray-600">© 2025 Lucy Gathoni Mugo.Built with passion, thriving in code mode.</p>
         </div>
       </footer>
     </div>
