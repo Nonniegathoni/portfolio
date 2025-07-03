@@ -40,15 +40,11 @@ export default function Portfolio() {
         <div className="container mx-auto px-4 py-20 text-center">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 overflow-hidden">
-                <img
-                  src="/lucy-photo.jpg"
-                  alt="Lucy Gathoni Mugo - Software Developer"
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-80 h-20 mx-auto mb-6 flex items-center justify-center">
+                <img src="/gathoni-logo.png" alt="Gathoni Logo" className="w-full h-full object-contain" />
               </div>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-4">Lucy Gathoni Mugo</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Lucy Gathoni Mugo</h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 font-medium">Junior Software Developer</p>
             <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
               Highly driven final-year software development student passionate about creating innovative solutions.
@@ -85,13 +81,14 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                 I am a dedicated software engineer who is presently enrolled in KCA University's Bachelor of Software Development program. 
-                     I anticipate graduating on November 28, 2025.
+                  I'm a passionate software developer currently pursuing my Bachelor's degree in Software Development at
+                  KCA University, with an expected graduation date of November 28th, 2025.
                 </p>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  Curiosity and a desire to use technology to address real-world issues have motivated my career in software development. 
-                  I actively take part in hackathons such as Android254 in order to consistently improve my abilities and remain current with emerging technologies.
-                  </p>
+                  My journey in software development has been driven by curiosity and a desire to solve real-world
+                  problems through technology. I actively participate in hackathons like Android254 to continuously
+                  enhance my skills and stay updated with the latest technologies.
+                </p>
                 <div className="flex items-center gap-4 text-gray-600">
                   <div className="flex items-center gap-2">
                     <Phone className="w-4 h-4" />
@@ -254,10 +251,9 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 bg-white/10 backdrop-blur-sm border-t border-white/20">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-600">© 2025 Lucy Gathoni Mugo.Built with passion, thriving in code mode.</p>
+          <p className="text-gray-600">© 2025 Lucy Gathoni Mugo. Built with passion and code.</p>
         </div>
       </footer>
     </div>
   )
 }
-
