@@ -56,7 +56,7 @@ export default function Portfolio() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                <a href="mailto:Lucygathonilg05@gmail.com">
+                <a href="mailto:Lgathoni.mugo@gmail.com">
                   <Mail className="w-5 h-5 mr-2" />
                   Get In Touch
                 </a>
