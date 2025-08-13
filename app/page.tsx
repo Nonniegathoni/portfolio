@@ -14,12 +14,7 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Kenol Catholic Church System",
-      description:
-        "A comprehensive web application for church management including member database, daily readings, donations tracking, mass schedules, and sacramental records. Achieved 30% increase in user engagement.",
-      technologies: ["Flask", "SQLite", "Pytest", "Python"],
-      role: "Second Developer (2-person team)",
-      github: "https://github.com/Nonniegathoni/Kenol-Catholic-Church-system",
+      "Startpoint — Internship Program Management Platform": description, "A centralized solution for managing the entire lifecycle of internship programs. Central Dashboard: admins post openings, handle applications, assign supervisors, track intern progress, and archive records. Application Portal: applicants browse, submit, and track applications with real-time notifications. Evaluation Modules: supervisors and HR shortlist, review, and decide on applicants with full accountability. Document Handling: structured upload, review, and archiving of CVs, letters, and reports. Analytics & Reporting: monitor progress, compliance, and outcomes at every stage.", technologies: ["Flask", "SQLite", "Pytest", "Python"], role: "Second Developer (2-person team)", github: "https://github.com/Nonniegathoni/Startpoint",
       icon: <Database className="w-6 h-6" />,
     },
     {
