@@ -117,7 +117,7 @@ export default function RootLayout({
                 "@type": "EducationalOrganization",
                 name: "KCA University",
               },
-              email: "Lucygathonilg05@gmail.com",
+              email: "lgathoni.mugo@gmail.com",
               telephone: "+254757726970",
             }),
           }}
