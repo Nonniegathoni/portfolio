@@ -117,8 +117,8 @@ export default function Portfolio() {
                   approach to every project.
                 </p>
                 <p className="text-lg text-white/90 mb-6 leading-relaxed">
-                  Currently pursuing my Bachelor&apos;s degree in Software Development at KCA University, I combine 
-                  academic foundations with hands-on experience in high-stakes environments. I actively participate 
+                  With a Bachelor&apos;s degree in Software Development from KCA University (2025), I combine 
+                  strong academic foundations with hands-on experience in high-stakes environments. I actively participate 
                   in hackathons and collaborative projects to stay sharp and contribute to the developer community.
                 </p>
                 <div className="flex items-center gap-4 text-white/80">
@@ -133,10 +133,10 @@ export default function Portfolio() {
                   <CardHeader>
                     <CardTitle className="text-white">Education</CardTitle>
                   </CardHeader>
-                  <CardContent>
+<CardContent>
                     <p className="font-semibold text-white/90">KCA University</p>
                     <p className="text-white/80">Bachelor of Science in Software Development</p>
-                    <p className="text-sm text-white/70">Expected: November 2025</p>
+                    <p className="text-sm text-white/70">Graduated: 2025</p>
                   </CardContent>
                 </Card>
                 <Card className="bg-white/20 backdrop-blur-sm border-white/30">
