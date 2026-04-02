@@ -7,29 +7,49 @@ import { Badge } from "@/components/ui/badge"
 
 export default function Portfolio() {
   const skills = {
-    "Programming Languages": ["Python", "Java", "C++", "C", "C#", "JavaScript", "TypeScript", "Kotlin"],
-    "Frameworks & Libraries": ["React", "Node.js", "Django", "Flask"],
-    "Tools & Technologies": ["Git", "Visual Studio Code", "Android Studio", "SQLite", "Pytest"],
+    "Frameworks": ["React", "Node.js", "Laravel"],
+    "Programming Languages": ["Python", "Java", "C++", "C", "C#"],
+    "Tools": ["Git", "Visual Studio Code", "Sublime"],
+    "Databases": ["SQLite", "MySQL"],
+    "Methodologies": ["Agile-like Coordination", "Personal Version Control", "Project-Specific Database Design"],
   }
 
   const projects = [
     {
-      title: "Startpoint — Internship Program Management Platform",
+      title: "Rooted Horizons EA",
       description:
-        "A centralized solution for managing the entire lifecycle of internship programs. Central Dashboard: admins post openings, handle applications, assign supervisors, track intern progress, and archive records. Application Portal: applicants browse, submit, and track applications with real-time notifications. Evaluation Modules: supervisors and HR shortlist, review, and decide on applicants with full accountability. Document Handling: structured upload, review, and archiving of CVs, letters, and reports. Analytics & Reporting: monitor progress, compliance, and outcomes at every stage.",
+        "A multi-page touring platform featuring a three-page destination architecture with dark/light mode functionality and animated UI elements for an enhanced user experience. Includes a custom booking system built with vanilla HTML, CSS, and JavaScript.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      role: "Developer",
+      link: "https://rootedhorizons.netlify.app/",
+      icon: <Globe className="w-6 h-6" />,
+    },
+    {
+      title: "Vibeflow - Online Banking Fraud Detection",
+      description:
+        "A website and mobile application featuring advanced algorithms and machine learning to monitor transactions in real-time, detect suspicious activity, and mitigate fraud risk.",
+      technologies: ["React.js", "JavaScript", "TypeScript", "Machine Learning"],
+      role: "Lead Developer",
+      link: "https://vibeflow-nonnie70s-projects.vercel.app/",
+      icon: <Smartphone className="w-6 h-6" />,
+    },
+    {
+      title: "Startpoint — Internship Lifecycle Management System",
+      description:
+        "A centralized solution for managing internship programs. Features include a central dashboard for posting openings, handling applications, tracking progress, an application portal with real-time notifications, evaluation and archiving modules, and integrated analytics for monitoring compliance and outcomes.",
       technologies: ["Flask", "SQLite", "Pytest", "Python"],
       role: "Second Developer (4-person team)",
-      github: "https://github.com/Nonniegathoni/Startpoint",
+      link: "https://github.com/Nonniegathoni/Startpoint",
       icon: <Database className="w-6 h-6" />,
     },
     {
-      title: "Vibeflow Banking Fraud Detection",
+      title: "Pealar HR Platform",
       description:
-        "Advanced fraud detection system with real-time transaction monitoring using machine learning algorithms. Features both web and mobile applications for comprehensive fraud prevention.",
-      technologies: ["React.js", "JavaScript", "TypeScript", "Machine Learning"],
-      role: "Lead Developer",
-      github: "https://github.com/Nonniegathoni/vibeflow-banking-final",
-      icon: <Smartphone className="w-6 h-6" />,
+        "A web app built for an HR company to help client businesses manage employee leave requests. Staff apply for leave, managers approve or reject, and the HR company oversees everything with company-specific data isolation.",
+      technologies: ["React", "Node.js", "Database"],
+      role: "Developer",
+      link: "#",
+      icon: <Code className="w-6 h-6" />,
     },
   ]
 
@@ -50,9 +70,11 @@ export default function Portfolio() {
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Lucy Gathoni Mugo</h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 font-medium">Junior Software Developer</p>
-            <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Highly driven final-year software development student passionate about creating innovative solutions.
-              Experienced in full-stack development, mobile applications, and machine learning integration.
+<p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
+              Experienced in building full-stack web applications and managing company-wide technical infrastructure. 
+              Proficient in Python, React, and JavaScript, with a background in developing high-accountability systems 
+              like fraud detection and internship management platforms. Dedicated to translating complex business data 
+              into clear, functional user interfaces.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button
@@ -88,14 +110,16 @@ export default function Portfolio() {
             <h2 className="text-4xl font-bold text-white mb-12 text-center">About Me</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-lg text-white/90 mb-6 leading-relaxed">
-                  I'm a passionate software developer currently pursuing my Bachelor's degree in Software Development at
-                  KCA University, with an expected graduation date of November 28th, 2025.
+<p className="text-lg text-white/90 mb-6 leading-relaxed">
+                  I specialize in building robust full-stack web applications that bridge the gap between complex 
+                  business requirements and intuitive user experiences. From fraud detection systems that protect 
+                  financial transactions to platforms that streamline organizational workflows, I bring a systematic 
+                  approach to every project.
                 </p>
                 <p className="text-lg text-white/90 mb-6 leading-relaxed">
-                  My journey in software development has been driven by curiosity and a desire to solve real-world
-                  problems through technology. I actively participate in hackathons like Android254 to continuously
-                  enhance my skills and stay updated with the latest technologies.
+                  Currently pursuing my Bachelor&apos;s degree in Software Development at KCA University, I combine 
+                  academic foundations with hands-on experience in high-stakes environments. I actively participate 
+                  in hackathons and collaborative projects to stay sharp and contribute to the developer community.
                 </p>
                 <div className="flex items-center gap-4 text-white/80">
                   <div className="flex items-center gap-2">
@@ -137,14 +161,16 @@ export default function Portfolio() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-white mb-12 text-center">Skills & Technologies</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+<div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
               {Object.entries(skills).map(([category, skillList]) => (
                 <Card key={category} className="bg-white/20 backdrop-blur-sm border-white/30">
-                  <CardHeader>
-                    <CardTitle className="text-white flex items-center gap-2">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-white flex items-center gap-2 text-base">
                       {category === "Programming Languages" && <Code className="w-5 h-5" />}
-                      {category === "Frameworks & Libraries" && <Globe className="w-5 h-5" />}
-                      {category === "Tools & Technologies" && <Database className="w-5 h-5" />}
+                      {category === "Frameworks" && <Globe className="w-5 h-5" />}
+                      {category === "Tools" && <Database className="w-5 h-5" />}
+                      {category === "Databases" && <Database className="w-5 h-5" />}
+                      {category === "Methodologies" && <Code className="w-5 h-5" />}
                       {category}
                     </CardTitle>
                   </CardHeader>
@@ -154,7 +180,7 @@ export default function Portfolio() {
                         <Badge
                           key={skill}
                           variant="secondary"
-                          className="bg-white/20 text-white hover:bg-white/30 border border-white/30"
+                          className="bg-white/20 text-white hover:bg-white/30 border border-white/30 text-xs"
                         >
                           {skill}
                         </Badge>
@@ -202,15 +228,14 @@ export default function Portfolio() {
                           ))}
                         </div>
                       </div>
-                      <Button
+<Button
                         asChild
                         variant="outline"
                         className="w-full border-white/30 text-white hover:bg-white/20 bg-transparent"
                       >
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-4 h-4 mr-2" />
-                          View on GitHub
-                          <ExternalLink className="w-4 h-4 ml-2" />
+                        <a href={project.link} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          View Project
                         </a>
                       </Button>
                     </div>
